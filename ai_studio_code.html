@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App - Google Sheets Sync</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="header-content">
+                <h1>Data Viewer</h1>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Buscar en cualquier columna...">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+            <div id="filters" class="filters-bar">
+                <!-- Los filtros dinámicos se cargarán aquí -->
+            </div>
+        </header>
+
+        <main>
+            <div id="loading" class="loader-container">
+                <div class="loader"></div>
+                <p>Cargando datos maestros...</p>
+            </div>
+
+            <div class="table-container" id="tableWrapper">
+                <table id="dataTable">
+                    <thead>
+                        <tr id="tableHeader"></tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
