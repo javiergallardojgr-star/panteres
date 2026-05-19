@@ -1,0 +1,6 @@
+{
+  "name": "Equipos Spreadsheet Replica",
+  "description": "Visual replica of a Google Spreadsheet for team tracking with real-time data fetching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
